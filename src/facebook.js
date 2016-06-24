@@ -10,6 +10,7 @@ class FacebookLogin extends React.Component {
     cookie: PropTypes.bool,
     scope: PropTypes.string,
     textButton: PropTypes.string,
+    typeButton: PropTypes.string,
     autoLoad: PropTypes.bool,
     size: PropTypes.string,
     fields: PropTypes.string,
@@ -21,6 +22,7 @@ class FacebookLogin extends React.Component {
 
   static defaultProps = {
     textButton: 'Login with Facebook',
+    typeButton: 'submit',
     scope: 'public_profile,email',
     xfbml: false,
     cookie: false,
@@ -109,7 +111,7 @@ class FacebookLogin extends React.Component {
   }
 
   render() {
-    const { cssClass, size, icon, textButton } = this.props;
+    const { cssClass, size, icon, textButton, typeButton } = this.props;
     if (icon) {
       return this.renderWithFontAwesome();
     }
@@ -119,6 +121,7 @@ class FacebookLogin extends React.Component {
         <button
           className={`${cssClass} ${size}`}
           onClick={this.click}
+          type={typeButton}
         >
           {textButton}
         </button>
