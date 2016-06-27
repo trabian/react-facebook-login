@@ -105,6 +105,7 @@ export default MyComponent;
 |   autoLoad   |  boolean |                 false                |
 |     xfbml    |  boolean |                 false                |
 |   textButton |  string  |          Login with Facebook         |
+|   typeButton |  string  |          submit                      |
 |   cssClass   |  string  | kep-login-facebook kep-login-facebook-[button-size]|
 |   version    |  string  |                  2.3                 |
 |   icon       |  string  |                  none                |
