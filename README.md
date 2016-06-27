@@ -110,3 +110,4 @@ export default MyComponent;
 |   version    |  string  |                  2.3                 |
 |   icon       |  string  |                  none                |
 |   language   |  string  |                  en_US               |
+|   style      |  object  |                  {}                  |
